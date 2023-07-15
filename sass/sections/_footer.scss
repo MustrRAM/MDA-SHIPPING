@@ -1,0 +1,99 @@
+.footer{
+    color: $white;
+    border-radius: 50px 50px 0px 0px;
+    background: #18162D;
+    position: relative;
+    margin-top: -50px;
+    z-index: 5;
+    padding-top: 56px;
+    padding-bottom: 41px;
+
+    .footer__inner{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: start;
+
+        @include media($m800){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+       
+       
+        @include media($m800){
+            text-align: center;
+        }
+
+
+        .footer__menu{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-transform: uppercase;
+
+            font-size: 18px;
+            letter-spacing: -0.18px;
+            text-transform: uppercase;
+
+            justify-self: end;
+
+            @include media($m800){
+                margin-top: 30px;
+            }
+           
+        }
+
+
+        .footer__social{
+            max-width: 252px;
+            display: flex;
+            flex-direction: column;
+
+            justify-self: end;
+
+            .social-box{
+                margin-bottom: 25px;
+                display: flex;
+                gap: 16px;
+                align-items: center;
+
+                @include media($m800){
+                    margin-top: 80px;
+                    justify-content: center;
+                    margin-bottom: 50px;
+
+                }
+        
+            }
+
+            .footer__link-box{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                font-size: 20px;
+                font-weight: 500;
+                
+                a:first-child{
+                text-decoration-line: underline;
+                }
+            }
+           
+        }
+    }
+
+    .footer__bottom{
+        margin-top: 14px;
+        color: rgba(255, 255, 255, 0.40);
+        font-size: 14px;
+
+        @include media($m800){
+            margin-top: 70px;
+            display: block;
+            text-align: center;
+        }
+    }
+}
+

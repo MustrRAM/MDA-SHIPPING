@@ -1,0 +1,25 @@
+@mixin secButton($mwidth, $mt){
+    margin-top: $mt;
+    text-align: center;
+    padding: 24px 24px;
+    width: $mwidth;
+    background: $basic-bg;
+    border-radius: 10px;
+    color: $white;
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    transition: all 0.3s linear;
+    &:hover{
+        background: #000;
+    }
+}
+
+// Media
+
+@mixin media($m1150){
+    @media(max-width: $m1150){
+        @content;
+    }
+}

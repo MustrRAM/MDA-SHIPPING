@@ -1,0 +1,76 @@
+.top{
+    position: relative;
+    min-height: 540px;
+}
+
+
+.top__inner{
+    margin-top: 60px;
+    display: flex;
+
+    @include media($m1000){
+        flex-direction: column;
+    }
+
+    @include media($m800){
+        margin-top: 20px;
+    }
+
+    .top__textbox{
+        position: relative;
+        z-index: 5;
+        flex-basis:807px;
+
+        @include media($m1000){
+            flex-basis: 0;
+        }
+        .top__title{
+            color: #18162D;
+            font-family: $mulish;
+            font-size: 54px;
+            font-weight: 600;
+            line-height: 61px; 
+
+            @include media($m800){
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            @include media($m500){
+                font-size: 26px;
+                line-height: 40px;
+            }
+
+            span{
+                color: $basic-bg;
+            }
+        }
+
+        .top___text{
+            margin-top: 35px;
+            max-width: 406px; 
+            color: #18162D;
+            line-height: 24px;
+        }
+
+
+        .section__button{
+            @include secButton(220px, 50px);
+        }
+    }
+
+    .top__image{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        @include media($m1000){
+            max-width: 100%;
+            position: static;
+            object-fit: cover;
+        }
+    }
+}
+
+

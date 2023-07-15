@@ -1,0 +1,115 @@
+.service{
+
+    .service__title{
+        margin-top: 90px;
+
+        color: $basic-bg;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .service__box{
+        margin-top: 45px;
+
+
+        .service__menu{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+
+            @include media($m1000){
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @include media($m500){
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .service__list{
+                color: #000;
+                padding: 30px 0 0 30px; 
+                border-radius: 20px;       
+                box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.10);
+
+                              
+
+                .service__link{
+                    position: relative;
+                    min-height: 250px;
+                    display: block;
+                
+                    p{
+                        color: inherit;
+                        font-family: $mulish;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28px; 
+                        max-width: 171px;
+                        transition: all 0.3s;
+                    }
+
+                    &:hover p{
+                        color: blueviolet;
+                    }
+
+                }
+
+                img{
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                    max-width: 100%;
+                }
+                
+                background-position: center;
+                transition: all 0.3s;
+
+                &:hover{
+                  transform: translate(-1%, 1%);
+                  box-shadow: -4px 4px 20px rgba(0, 0, 0, .2);
+                }
+            }
+
+            .last__list,
+            .fourth__list,
+            .third__list{
+                grid-column: 2 span;
+
+                @include media($m500){
+                    grid-column: initial;
+                }
+            }
+        }
+    
+        .service__link-more{
+            margin: 0 auto;
+
+            display: block;
+            max-width: 312px;
+            width: 100%;
+            margin-top: 45px;
+
+            padding: 24px 15px;
+            text-align: center;
+
+            color: #8C8C8C;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            transition: all 0.2s linear;
+
+            border-radius: 10px;
+            background: #F0F0FA;
+
+            &:hover{
+                background: #000;
+                color: $white;
+            }
+        }
+    }
+
+}
+

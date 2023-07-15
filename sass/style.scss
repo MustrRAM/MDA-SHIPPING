@@ -1,0 +1,17 @@
+// Base
+
+@import './base/vars';
+@import './base/mixin';
+@import './base/base';
+
+// Sections
+
+@import './sections/header';
+@import './sections/top.scss';
+@import './sections/contacts';
+@import './sections/video';
+@import './sections/service';
+@import './sections/works-slider';
+@import './sections/footer';
+
+// Blocks

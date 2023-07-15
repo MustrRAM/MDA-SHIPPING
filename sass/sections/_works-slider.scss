@@ -1,0 +1,120 @@
+.main__slider{
+    overflow-x: hidden;
+
+    
+
+   
+}
+
+
+
+.splide{
+    margin-right: calc((100vw - 100%) / 2 * -1);
+    position: relative;
+    margin-top: 100px;
+
+
+    .splide__slide{
+        padding-right: 10px;
+       
+
+        @include media($m500){
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 20px;
+        }
+        
+
+    }
+
+    
+
+    &.is-initialized:not(.is-active) .splide__list{
+        @include media($m1000){
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @include media($m500){
+            grid-template-columns: repeat(1, 1fr);
+            align-self: center;
+        }
+    }
+    
+    .main__slider-title{
+        margin: 141px 0 65px 0;
+        color: #18162D;
+        font-family: $mulish;
+        font-size: 46px;
+        font-weight: 700;
+
+        @include media($m500){
+            font-size: 34px;
+        }
+    }
+  
+
+    .splide__arrow{
+        background: transparent;
+        font-size: 30px;
+        position: absolute;
+        top: 0;
+        width: initial;
+        justify-content: end;
+        margin-right: 128px;
+        transform: translateY(0);
+    }
+
+    .splide__arrow--prev{
+        position: absolute;
+        right: 90px;
+    }
+
+    
+}
+
+
+
+.image__wrapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border: 2px solid #3579f4;
+    border-radius: 50%;
+
+    @include media($m500){
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+
+
+h4{
+    color: #18162D;
+    font-family: $mulish;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px; 
+    margin-top: 30px;
+    max-width: 258px;
+
+    @include media($m500){
+        margin-top: 0;
+        font-size: 22px;
+        max-width: 210px;
+    }
+}
+p{
+    color: rgba(24, 22, 45, 0.70);
+    line-height: 20px; 
+    margin-top: 20px;
+    max-width: 290px;
+    @include media($m500){
+        max-width: 210px;
+    }
+}
