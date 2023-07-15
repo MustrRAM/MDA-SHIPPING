@@ -1,0 +1,40 @@
+
+
+.services__info-inner{
+    margin-top: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    @include media($m1000){
+        flex-direction: column;
+    }
+
+    h3{
+        flex-basis: 290px;
+        color: $basic-bg;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @include media($m1000){
+            margin-bottom: 35px;
+            flex-basis: 0;
+        }
+    }
+
+   .services__textbox{
+        flex-basis: 541px;
+
+        @include media($m1000){
+            flex-basis: 0;
+        }
+
+        p:first-child{
+            margin-bottom: 39px;
+        }
+        p:last-child{
+        margin-top: 20px;   
+        }
+   }
+}

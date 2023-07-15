@@ -54,23 +54,28 @@
         }
 
 
-        .section__button{
+        .index__button{
             @include secButton(220px, 50px);
         }
     }
+    
 
     .top__image{
         position: absolute;
         top: 0;
         right: 0;
         z-index: 1;
+        max-width: max-content;
 
         @include media($m1000){
-            max-width: 100%;
             position: static;
-            object-fit: cover;
+            margin-right: -15px;
+            align-self: flex-end;
+            max-width: 100%;
         }
     }
+
+   
 }
 
 
