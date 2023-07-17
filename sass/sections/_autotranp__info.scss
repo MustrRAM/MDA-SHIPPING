@@ -26,6 +26,10 @@
             font-weight: 700;
             line-height: 28px; 
             min-width: max-content;
+
+            @include media($m500){
+                font-size: 22px;
+            }
         }
 
         div{
@@ -55,6 +59,10 @@
                 color: rgba(24, 22, 45, 0.90);
                 font-size: 22px;
                 line-height: 24px; 
+
+                @include media($m500){
+                    font-size: 18px;
+                }
             }
 
            

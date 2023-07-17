@@ -1,5 +1,11 @@
+.main__video{
+    transition: all .5s ease-in;
+    opacity: 0;
+}
 .main__video-link{
     position: relative;
+  
+   
     
     .video__image{
         max-width: 100%;
