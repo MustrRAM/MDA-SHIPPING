@@ -1,0 +1,21 @@
+.autoload__info-texup{
+    max-width: 315px;
+    color: rgba(24, 22, 45, 0.90);
+    font-size: 22px;
+    line-height: 24px; 
+}
+
+.autoload__info-texup + .autoload__info-texup{
+    margin-top: 15px;
+}
+
+.dismantling__info-texup{
+    max-width: 600px;
+    color: rgba(24, 22, 45, 0.90);
+    font-size: 22px;
+    line-height: 24px; 
+}
+
+.dismantling__info-texup + .dismantling__info-texup{
+    margin-top: 15px;
+}

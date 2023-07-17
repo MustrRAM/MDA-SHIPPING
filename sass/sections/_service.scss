@@ -1,16 +1,16 @@
 .service{
 
     .service__title{
-        margin-top: 90px;
-
         color: $basic-bg;
+        font-family: $mulish;
         font-size: 18px;
         font-weight: 600;
         text-transform: uppercase;
+        margin-top: 68px;
     }
 
     .service__box{
-        margin-top: 45px;
+        margin-top: 50px;
 
 
         .service__menu{
@@ -111,5 +111,18 @@
         }
     }
 
+}
+
+.services__title{
+    color: #18162D;
+    font-family: $mulish;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 61px; 
+    margin-top: 68px;
+
+    @include media($m500){
+        font-size: 42px;
+    }
 }
 

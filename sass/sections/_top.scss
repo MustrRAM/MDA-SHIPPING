@@ -3,12 +3,76 @@
     min-height: 540px;
 }
 
+.top__types{
+    margin-top: 46px;
+    h3{
+        color: $basic-bg;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px; 
+        text-transform: uppercase;
+    }
+    ul{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 130px);
+        gap: 20px;
+
+        @include media($m500){
+            grid-template-columns: repeat(3, auto);
+            margin-bottom: 0;
+        }
+        li{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 7px;
+
+            color: #18162D;
+            font-family: $mulish;
+            font-weight: 600;
+            line-height: 16px;
+
+            p{
+                @include media($m350){
+                    font-size: 13px;
+                }
+            }
+    
+            .top__image-wrap{
+                border-radius: 10px;
+                background: #F0F0FA;
+                padding: 10px 15px;
+                max-width: 100%;
+                height: 90px;
+                
+                div{
+                    height: 100%;
+                    
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                @include media($m500){
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+    
+        }
+    }
+}
+
+
 
 .top__inner{
     margin-top: 60px;
-    display: flex;
+    display: block;
 
     @include media($m1000){
+        display: flex;
         flex-direction: column;
     }
 
@@ -55,7 +119,26 @@
 
 
         .index__button{
-            @include secButton(220px, 50px);
+            @include secButton(220px);
+
+            @include media($m800){
+
+                @include secButton(320px);
+
+            }
+
+            @include media($m500){
+                position: fixed;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 27px;
+            }
+        }
+
+        .section__button{
+            margin-bottom: 15px;
+            @include secButton(360px);
         }
     }
     
@@ -64,7 +147,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 1;
+        z-index: -1;
         max-width: max-content;
 
         @include media($m1000){

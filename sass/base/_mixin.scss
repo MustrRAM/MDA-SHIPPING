@@ -1,8 +1,9 @@
-@mixin secButton($mwidth, $mt){
-    margin-top: $mt;
+@mixin secButton($mwidth){
+    margin-top: 50px;
     text-align: center;
     padding: 24px 24px;
-    width: $mwidth;
+    max-width: $mwidth;
+    width: 100%;
     background: $basic-bg;
     border-radius: 10px;
     color: $white;

@@ -1,0 +1,52 @@
+.price{
+    font-family: $mulish;
+}
+
+.price__title{
+    margin-top: 100px;
+
+    color: #18162D;
+    font-size: 46px;
+    font-weight: 700;
+
+    @include media($m500){
+        font-size: 33px;
+    }
+}
+
+.price__menu{
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    @include media($m800){
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    @include media($m800){
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .price__list{
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.10);
+
+        color: #000;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px; 
+        padding: 37px;
+    }
+}
+
+.price__menu-warehous{
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media($m800){
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

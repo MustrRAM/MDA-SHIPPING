@@ -2,16 +2,18 @@
     @include media($m800){
         position: relative;
     }
+
+  
 }
 
 
 .header__inner{
+    padding-top: 32px;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    align-items: center;
-    padding-top: 32px;
 
     .header__logo{
+        max-width: max-content;
         img{
             max-width: 100%;
             position: relative;
@@ -74,10 +76,9 @@
 }
 
 nav{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     align-items: center;
-    flex: 1;
 
     @include media($m800){
         display: flex;
@@ -96,6 +97,7 @@ nav{
         transition: all 0.3s;
         padding: 0 15px;
         padding-top: 70px;
+        
     }
 
 
@@ -139,10 +141,21 @@ nav{
         }
     }
 
+    .header__social-box{
+        justify-self: end;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include media($m800){
+            flex-direction: column;
+        }
+
+    }
+
     .header__social{
         display: flex;
         gap: 10px;
-        justify-self: end;
     
         a{
             

@@ -1,0 +1,99 @@
+.buying__slider{
+    display: flex;
+    gap: 25px;
+   
+  
+
+    @include media($m1000){
+        gap: 0; 
+        display: block;
+    }
+
+   
+    .buying__slide{
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: -4px 4px 16px 0px rgba(0, 0, 0, 0.10);
+        padding: 0 32px 32px 32px;
+        margin:15px;
+
+        h4{
+            padding-top: 43px;
+            color: $basic-bg;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 24px;
+        }
+
+        p{
+            margin-top: 20px;
+            color: rgba(24, 22, 45, 0.90);
+            font-weight: 400;
+            line-height: 24px; 
+            max-width: 283px;
+        }
+        h5{
+            margin-top: 10px;
+            color: $basic-bg;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        ul{
+            list-style-type: initial;
+            
+            li{
+                display: block;
+                margin-top: 10px;
+            }
+
+           
+        }
+    }
+
+    .slick-dots button{
+        color: #fff;
+
+    }
+
+    .slick-dots{
+        margin-top: 30px;
+        display: block;
+        max-width: 80px;
+        margin: 0 auto;
+        li{
+            position: relative;
+            &::before{
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 12px;
+                background: rgba(53, 121, 244, 0.20);
+                position: absolute;
+                padding: 5px;
+                top: 5px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                cursor: pointer;
+            }
+
+            &.slick-active{
+                &::before{
+                background: $basic-bg;
+
+                }
+            }
+        }
+
+        li + li{
+            margin-left: 10px;
+        }
+    }
+
+
+   
+
+  
+}
